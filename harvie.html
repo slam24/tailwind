@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harvie-pages</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body class="bg-white text-gray-800">
+    <header class="bg-white text-gray-700 font-semibold px-8 py-3 flex justify-between items-center">
+        <img class="w-100 h-8" src="./img/logo-harvie.png" alt="">
+
+        <!-- Botón Hamburguesa -->
+        <button id="menu-btn" class="block md:hidden">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+
+        <!-- Menú de Navegación -->
+        <nav id="menu" class="hidden md:flex items-center space-x-6">
+            <a href="#" class="hover:underline">Producto</a>
+            <a href="#" class="hover:underline">Contacto</a>
+            <a href="#" class="hover:underline">Bolsa de trabajo</a>
+            <a href="#" class="hover:underline">Iniciar Sesión</a>
+            <button class="rounded-3xl bg-blue-900 text-white py-2 px-8">Solicitar Demo</button>
+            <button id="menu-btn" class="block flex items-center space-x-4">
+                <i class="fas fa-globe text-gray-700 text-l"></i>
+                EN
+            </button>
+        </nav>
+    </header>
+
+    <main class="mx-12 p-12">
+        <section class="my-12 grid md:grid-cols-2 gap-8">
+            <div class="items-center">
+                <h4 class="text-black font-bold text-3xl">La herramienta #1 de <span class="text-blue-900">Atracción, Selección y Marca Empleadora</span></h4>
+                <p class="text-black mt-8">La nueva forma de <span class="font-bold">atraer, gestionar y seleccionar</span> el mejor talento. Crece más rápido mejorando la experiencia del
+                proceso para tus candidatos.</p>
+                <div class="flex space-x-4">
+                    <button class="rounded-3xl bg-blue-900 text-white py-2 px-10 mt-8">Soy reclutador</button>
+                    <button class="rounded-3xl bg-white text-sky-400 py-2 px-4 mt-8 border border-sky-400 border-2">Busco trabajo</button>
+                </div>
+            </div>
+            <div class="items-center">
+                <img src="./img/bannerHomeHarvie.png" alt="">
+            </div>
+        </section>
+    </main>
+    <footer class="bg-blue-900 text-white py-8">
+        <div
+            class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <p class="text-sm">&copy; 2025 Mi Sitio. Todos los derechos reservados.</p>
+
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-gray-300">Facebook</a>
+                <a href="#" class="hover:text-gray-300">Twitter</a>
+                <a href="#" class="hover:text-gray-300">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+
+    menuBtn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+    });
+</script>
+
+</html>
