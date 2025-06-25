@@ -10,17 +10,137 @@
 
 <body class="bg-white text-gray-800">
     <!-- Aquí irá todo nuestro contenido -->
-    <header class="bg-indigo-600 text-white p-6">
-        <h1 class="text-3xl font-bold">Mi Sitio Moderno</h1>
-        <p class="text-sm">Construido con Tailwind CSS</p>
-    </header>
+    <header class="bg-indigo-600 text-white px-6 py-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold">Mi Sitio</h1>
+    
+        <!-- Botón Hamburguesa -->
+        <button id="menu-btn" class="block md:hidden">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+        </button>
+
+        <!-- Menú de Navegación -->
+        <nav id="menu" class="hidden md:flex space-x-6">
+            <a href="#" class="hover:underline">Inicio</a>
+            <a href="#" class="hover:underline">Servicios</a>
+            <a href="#" class="hover:underline">Portafolio</a>
+            <a href="#" class="hover:underline">Contacto</a>
+        </nav>
+        </header>
 
     <main class="p-6">
         <section class="my-12">
             <h2 class="text-2xl font-semibold mb-4">Bienvenido</h2>
             <p class="text-base text-gray-600">Este es el inicio de nuestra Single Page moderna.</p>
         </section>
+        <section class="py-16 bg-gray-100">
+            <div class="max-w-6xl mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Nuestros Servicios</h2>
+        
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-xl transition-shadow">
+                        <h3 class="text-xl font-semibold mb-2">Desarrollo Web</h3>
+                        <p class="text-gray-600 text-sm">Creamos sitios rápidos, modernos y seguros.</p>
+                    </div>
+        
+                    <div class="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-xl transition-shadow">
+                        <h3 class="text-xl font-semibold mb-2">Diseño UI/UX</h3>
+                        <p class="text-gray-600 text-sm">Interfaces atractivas y fáciles de usar.</p>
+                    </div>
+        
+                    <div class="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-xl transition-shadow">
+                        <h3 class="text-xl font-semibold mb-2">Consultoría</h3>
+                        <p class="text-gray-600 text-sm">Te asesoramos para lograr tus objetivos digitales.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-16 bg-white">
+            <div class="max-w-6xl mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Portafolio</h2>
+        
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- Proyecto 1 -->
+                    <div class="overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-shadow">
+                        <img src="https://via.placeholder.com/600x400" alt="Proyecto 1" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold">Proyecto Uno</h3>
+                            <p class="text-sm text-gray-600">Sitio web de empresa moderna.</p>
+                        </div>
+                    </div>
+        
+                    <!-- Proyecto 2 -->
+                    <div class="overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-shadow">
+                        <img src="https://via.placeholder.com/600x400" alt="Proyecto 2" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold">Proyecto Dos</h3>
+                            <p class="text-sm text-gray-600">Landing page para startup.</p>
+                        </div>
+                    </div>
+        
+                    <!-- Proyecto 3 -->
+                    <div class="overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-shadow">
+                        <img src="https://via.placeholder.com/600x400" alt="Proyecto 3" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold">Proyecto Tres</h3>
+                            <p class="text-sm text-gray-600">Tienda online con carrito.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+          
+        <section class="py-16 bg-gray-100">
+            <div class="max-w-4xl mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-8">Contáctanos</h2>
+        
+                <form class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex flex-col">
+                        <label for="nombre" class="mb-2 text-sm font-semibold text-gray-700">Nombre</label>
+                        <input type="text" id="nombre"
+                            class="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    </div>
+        
+                    <div class="flex flex-col">
+                        <label for="email" class="mb-2 text-sm font-semibold text-gray-700">Correo electrónico</label>
+                        <input type="email" id="email"
+                            class="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    </div>
+        
+                    <div class="md:col-span-2 flex flex-col">
+                        <label for="mensaje" class="mb-2 text-sm font-semibold text-gray-700">Mensaje</label>
+                        <textarea id="mensaje" rows="5"
+                            class="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+                    </div>
+        
+                    <div class="md:col-span-2 text-right">
+                        <button type="submit"
+                            class="bg-indigo-600 text-white px-6 py-2 rounded hover:bg-indigo-700 transition">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
+    <footer class="bg-indigo-700 text-white py-8">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <p class="text-sm">&copy; 2025 Mi Sitio. Todos los derechos reservados.</p>
+    
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-gray-300">Facebook</a>
+                <a href="#" class="hover:text-gray-300">Twitter</a>
+                <a href="#" class="hover:text-gray-300">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
 </body>
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
 
+    menuBtn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+    });
+</script>
 </html>
