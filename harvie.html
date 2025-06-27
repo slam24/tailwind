@@ -8,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style href="./css/harvie.css"></style>
 
 </head>
 
@@ -37,22 +38,78 @@
         </nav>
     </header>
 
-    <main class="mx-12 p-12">
-        <section class="my-12 grid md:grid-cols-2 gap-8">
+    <main>
+        <section class="mx-12 md:p-12 md:pb-0 mt-12 grid md:grid-cols-2 gap-8">
             <div class="items-center">
                 <h4 class="text-black font-bold text-3xl">La herramienta #1 de <span class="text-blue-900">Atracción, Selección y Marca Empleadora</span></h4>
                 <p class="text-black mt-8">La nueva forma de <span class="font-bold">atraer, gestionar y seleccionar</span> el mejor talento. Crece más rápido mejorando la experiencia del
                 proceso para tus candidatos.</p>
-                <div class="flex space-x-4">
-                    <button class="rounded-3xl bg-blue-900 text-white py-2 px-10 mt-8">Soy reclutador</button>
-                    <button class="rounded-3xl bg-white text-sky-400 py-2 px-4 mt-8 border border-sky-400 border-2">Busco trabajo</button>
+                <div class="md:flex md:space-x-4">
+                    <button class="w-full md:w-auto rounded-3xl bg-blue-900 text-white py-2 px-10 mt-8">Soy reclutador</button>
+                    <button class="w-full md:w-auto rounded-3xl bg-white text-sky-400 py-2 px-4 mt-8 border border-sky-400 border-2">Busco trabajo</button>
+                </div>
+                <div class="pt-4 block flex items-center space-x-4">
+                    <i class="fas fa-globe text-blue-900 text-l"></i>
+                    <a class="underline text-blue-900 font-semibold items-center" href="#">Solicitar Demo</a>
                 </div>
             </div>
             <div class="items-center">
                 <img src="./img/bannerHomeHarvie.png" alt="">
             </div>
         </section>
+        <section class="bg-gray-100">
+            <img class="h-16 w-full" src="./img/formHome.png" alt="">
+        </section>
+        <section class="bg-gray-100 md:px-12 pb-10">
+            <h4 class="pt-14 pb-8 font-semibold text-center text-gray-500 text-xl">Presentado en</h4>
+            <div class="block flex items-center justify-center space-x-4">
+                <img src="./img/featuredInForbes.png" alt="">
+                <img src="./img/featuredInForbes.png" alt="">
+                <img src="./img/featuredInForbes.png" alt="">
+                <img src="./img/featuredInForbes.png" alt="">
+            </div>
+            <h2 class="text-slate-900 font-bold text-4xl text-center mt-32">Optimizamos los procesos de reclutamiento</h2>
+            <p class="text-slate-900 text-l text-center mt-10">Tu departamento de reclutamiento merece tener una herramienta que le ayude a hacer su trabajo mejor y más eficiente.</p>
+            <p class="text-slate-900 font-bold text-l text-center mt-6">¡Además, revolucionamos la experiencia de reclutamiento para los candidatos!</p>
+        </section>
+        <section class="bg-gray-100 md:px-32 pb-10 pt-24 grid md:grid-cols-2 gap-8">
+            <div class="flex items-center justify-center">
+                <img class="w-90" src="./img/premiumAds.png" alt="">
+            </div>
+            <div>
+                <div class="block flex items-center space-x-4 pb-6">
+                    <img src="./img/bulletIconHome.png" alt="">
+                    <h4 class="font-semibold text-center text-gray-500 text-xl">Presentado en</h4>
+                </div>
+                <h3 class="text-slate-900 font-semibold text-3xl pb-6">Atrae candidatos con anuncios optimizados</h3>
+                <p class="pb-6">Con Harvie, olvídate de la molestia de crear anuncios individuales en diferentes plataformas para promocionar tu
+                vacante. Con nuestro portal, solo tienes que crear la vacante, definir el presupuesto y dejarnos hacer el trabajo por
+                ti. Utilizamos los canales más apropiados para la posición que estés reclutando y optimizamos tus anuncios para asegurar
+                los mejores resultados con el mínimo costo. ¡Deja que Harvie te haga la vida más fácil!</p>
+                <a class="underline text-blue-900 font-semibold items-center" href="#">Ver más</a>
+
+            </div>
+        </section>
+        <section class="bg-gray-100 md:px-32 pb-10 pt-24 grid md:grid-cols-2 gap-8">
+            <div>
+                <div class="block flex items-center space-x-4 pb-6">
+                    <img src="./img/bulletIconHome.png" alt="">
+                    <h4 class="font-semibold text-center text-gray-500 text-xl">Recepción de candidato</h4>
+                </div>
+                <h3 class="text-slate-900 font-semibold text-3xl pb-6">Dejá de recibir CVs por correo</h3>
+                <p class="pb-6">Desde Harvie podrás recibir todas las aplicaciones de los candidatos, teniendo entonces <span class="font-bold">un solo portal con toda la
+                información</span> de todos los diferentes procesos.</p>
+                <p class="pb-6">No importa si tu empresa no está acostumbrada a recibir <span class="font-bold">volúmenes gigantes</span> de candidatos por puesto. Así sean <span class="font-bold">10-15
+                candidatos</span>, recibir la información en un mismo formato y tener todo en un portal diseñado para esto, te hace más fácil
+                la toma de decisión.</p>
+        
+            </div>
+            <div class="flex items-center justify-center">
+                <img class="w-90" src="./img/receptionCandidates.png" alt="">
+            </div>
+        </section>
     </main>
+
     <footer class="bg-blue-900 text-white py-8">
         <div
             class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
